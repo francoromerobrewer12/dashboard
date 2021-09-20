@@ -1,0 +1,42 @@
+.topbarContainer{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    overflow-x: hidden;
+    background-color: rgb(228, 218, 218);
+
+    .topbarLeft{
+        .logo{
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
+    .topbarRight{
+        width: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .topbarIcon{
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+        .topbarImg{
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 50%;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,8 +1,17 @@
+import './App.css';
+import Sidebar from './components/Sidebar/Sidebar';
+import Topbar from "./components/Topbar/Topbar";
 
 function App() {
   return (
     <div className="App">
-      <h1>hola como estan</h1>
+      <Topbar />
+      <div className="container">
+        <Sidebar />
+        <div className="others">
+          <h1>other</h1>
+        </div>
+      </div>
     </div>
   );
 }
