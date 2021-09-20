@@ -1,0 +1,50 @@
+.featuredContainer{
+    width: 32%;
+    height: 30%;
+    padding: 20px;
+    background-color: rgb(235, 230, 230);
+    border-radius: 5px;
+    
+
+    .featuredWrap{
+        width: 100%;
+        height: 100%;
+        
+
+        .featuredValues{
+            display: flex;
+            align-items: center;
+
+            .featuredNumber{
+                font-size: 3rem;
+            }
+
+            .featuredTendency{
+                margin-left: 2rem;
+                display: flex;
+                align-items: center;
+
+                .green{
+                    color: rgb(16, 173, 16);
+                }
+                .red{
+                    color: red;
+                }
+
+                .featuredTendencyIcon{
+                    font-size: 1.2rem;
+
+                }
+
+                .featuredTendencyValue{
+                    font-size: 1.3rem;
+                    margin-right: 10px;
+                }
+            }
+            
+        }
+        .featuredInfoSubtitle{
+            color: rgb(112, 111, 111)
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.homeContainer{
+    flex:4;
+    padding: 20px;
+    background-color: grey;
+
+    .featureBoxesWrap{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}

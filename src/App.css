@@ -7,8 +7,3 @@
     width: 100%;
     height: calc( 100vh - 60px);
 }
-
-.others{
-    flex: 4;
-    background-color: black;
-}
