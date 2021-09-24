@@ -1,0 +1,55 @@
+.widgetLgContainer{
+    flex: 2;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 20px;
+    padding: 20px;
+
+    .widgetLgTitle{
+        margin-bottom: 1rem;
+    }
+
+    .widgetLgTable{
+        width: 100%;
+
+        .widgetLgTr{
+            display: flex;
+            width: 100%;
+            margin-bottom: 20px;
+            justify-content: space-between;
+            align-items: center;
+
+            .widgetLgTh{
+                text-align: left;
+                font-weight: 600;
+            }
+
+            .widgetLgUser{
+                display: flex;
+                
+
+                .widgetLgUserImg{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    margin-right: 5px;
+                    object-fit: cover;
+                }
+
+                .widgetLgName{
+                }
+
+                .widgetLgDate{
+                    display: flex;
+                    align-items: center;
+                }
+            }
+
+            .widgetLgStatusBtn{
+                display: flex;
+                align-items: center;
+                padding: 5px;
+            }
+        }
+    }
+}

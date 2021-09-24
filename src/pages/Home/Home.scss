@@ -2,11 +2,17 @@
     flex:4;
     padding: 20px;
     background-color: grey;
+    overflow-y: scroll;
 
     .featureBoxesWrap{
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 20px;
+    }
+
+    .widgetsWrap{
+        width: 100%;
+        display: flex;
     }
 }

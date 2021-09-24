@@ -15,6 +15,11 @@
   background-color: #e4dada;
 }
 
+.topbarContainer .topbarLeft .logo {
+  text-decoration: none;
+  color: black;
+}
+
 .topbarContainer .topbarLeft .logo:hover {
   cursor: pointer;
 }

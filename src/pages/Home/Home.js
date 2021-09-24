@@ -1,6 +1,10 @@
+import { Widgets } from '@material-ui/icons';
 import React from 'react';
 import Chart from '../../components/Chart/Chart';
 import FeaturedInfo from '../../components/FeaturedInfo/FeaturedInfo';
+import WidgetLg from '../../components/WidgetLg/WidgetLg';
+import WidgetSm from '../../components/WidgetSm/WidgetSm';
+import {chartData} from '../../data';
 import './Home.css';
 
 function Home() {
@@ -11,7 +15,11 @@ function Home() {
                 <FeaturedInfo title="Sales" value="1.250" tendency="5.7"/>
                 <FeaturedInfo title="Costs" value="500" tendency="-10.2"/>
             </div>
-            <Chart />
+            <Chart title="Users Analysis" data={chartData} ejeX="Month" ejeY="Active Users"/>
+            <div className="widgetsWrap">
+                <WidgetSm />
+                <WidgetLg />
+            </div>
         </div>
     )
 }

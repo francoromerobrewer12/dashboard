@@ -1,0 +1,106 @@
+.userContainer {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  padding: 20px;
+  height: calc( 100vh - 60px);
+}
+
+.userContainer .upperUser {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.userContainer .upperUser .createButton {
+  background-color: #1c1cc2;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.userContainer .upperUser .createButton:hover {
+  cursor: pointer;
+}
+
+.userContainer .editSectionsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.userContainer .editSectionsContainer .personalInfoContainer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #fff0f0;
+}
+
+.userContainer .editSectionsContainer .personalInfoContainer .personalInfoHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.userContainer .editSectionsContainer .personalInfoContainer .personalInfoHeader .personalInfoImg {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.userContainer .editSectionsContainer .personalInfoContainer .personalInfoHeader .personalInfoHeaderText .personalInfoName {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.userContainer .editSectionsContainer .personalInfoContainer .personalInfoHeader .personalInfoHeaderText .personalInfoJob {
+  color: #9e9999;
+}
+
+.userContainer .editSectionsContainer .personalInfoContainer .personalInfoBody .personalInfoBodyTitle {
+  color: black;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.userContainer .editSectionsContainer .personalInfoContainer .personalInfoBody .userBlockInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.userContainer .editSectionsContainer .personalInfoContainer .personalInfoBody .userBlockInfo .userIcon {
+  margin-right: 20px;
+}
+
+.userContainer .editSectionsContainer .editContainer {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+/*# sourceMappingURL=User.css.map */

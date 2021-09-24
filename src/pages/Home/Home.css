@@ -4,6 +4,7 @@
           flex: 4;
   padding: 20px;
   background-color: grey;
+  overflow-y: scroll;
 }
 
 .homeContainer .featureBoxesWrap {
@@ -17,5 +18,12 @@
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 20px;
+}
+
+.homeContainer .widgetsWrap {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=Home.css.map */

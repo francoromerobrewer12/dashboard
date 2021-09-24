@@ -1,0 +1,63 @@
+.usersContainer{
+    flex: 4;
+    
+    .userRowContainer{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        outline: none;
+
+        .tableImg{
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-right: 10px;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+
+        .tableUserName{
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
+    .actionRowContainer{
+        display: flex;
+        align-items: center;
+
+        .editLink{
+            outline: none;
+
+            .editButton{
+                background-color: green;
+                color: white;
+                border: none;
+                padding: 5px 10px;
+                border-radius: 3px;
+                margin-right: 5px;
+    
+                &:hover{
+                    cursor: pointer;
+                }
+    
+            }
+        }
+
+        
+
+        .deleteButton{
+            color: black;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
+    
+}

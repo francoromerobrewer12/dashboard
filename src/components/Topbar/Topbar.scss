@@ -10,6 +10,9 @@
 
     .topbarLeft{
         .logo{
+            text-decoration: none;
+            color: black;
+            
             &:hover{
                 cursor: pointer;
             }

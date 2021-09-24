@@ -1,0 +1,87 @@
+.userContainer{
+    flex: 4;
+    padding: 20px;
+    height: calc( 100vh - 60px );
+
+    .upperUser{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        .editTitle{
+    
+        }
+        .createButton{
+            background-color: rgb(28, 28, 194);
+            border: none;
+            border-radius: 3px;
+            padding: 10px 20px;
+            color: white;
+            font-size: 1.2rem;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
+    .editSectionsContainer{
+        display: flex;
+        width: 100%;
+
+        .personalInfoContainer{
+            flex: 1;
+            flex-direction: column;
+            border-radius: 5px;
+            padding: 20px;
+            background-color: rgb(255, 240, 240);
+
+            .personalInfoHeader{
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+
+                .personalInfoImg{
+                    width: 80px;
+                    height: 80px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    margin-right: 10px;
+                }
+
+                .personalInfoHeaderText{
+                    .personalInfoName{
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                    }
+                    .personalInfoJob{
+                        color: rgb(158, 153, 153)
+                    }
+                }
+            }
+
+            .personalInfoBody{
+                .personalInfoBodyTitle{
+                    color: black;
+                    margin-bottom: 20px;
+                    margin-top: 30px;
+                }
+
+                .userBlockInfo{
+                    display: flex;
+                    margin-bottom: 20px;
+                    .userIcon{
+                        margin-right: 20px;
+                    }
+                }
+            }
+        }
+
+
+        .editContainer{
+            flex: 2;
+        }
+        
+    }
+}

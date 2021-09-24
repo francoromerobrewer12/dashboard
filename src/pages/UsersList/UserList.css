@@ -1,0 +1,69 @@
+.usersContainer {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+}
+
+.usersContainer .userRowContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  color: black;
+  outline: none;
+}
+
+.usersContainer .userRowContainer .tableImg {
+  width: 30px;
+  height: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.usersContainer .userRowContainer .tableImg:hover {
+  cursor: pointer;
+}
+
+.usersContainer .userRowContainer .tableUserName:hover {
+  cursor: pointer;
+}
+
+.usersContainer .actionRowContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.usersContainer .actionRowContainer .editLink {
+  outline: none;
+}
+
+.usersContainer .actionRowContainer .editLink .editButton {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+
+.usersContainer .actionRowContainer .editLink .editButton:hover {
+  cursor: pointer;
+}
+
+.usersContainer .actionRowContainer .deleteButton {
+  color: black;
+}
+
+.usersContainer .actionRowContainer .deleteButton:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=UserList.css.map */
