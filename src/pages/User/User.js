@@ -7,7 +7,8 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import MailIcon from '@mui/icons-material/Mail';
 import RoomIcon from '@mui/icons-material/Room';
 import {rows} from '../../data';
-import foto1 from '../../assets/1.jpg'
+import foto1 from '../../assets/1.jpg';
+import { Link } from 'react-router-dom';
 
 function User() {
 
@@ -36,7 +37,9 @@ function User() {
         <div className="userContainer">
             <div className="upperUser">
                 <h1 className="editTitle">Edit User</h1>
-                <button className="createButton">Create</button>
+                <Link to="/newUser">
+                    <button className="createButton">Create</button>
+                </Link>
             </div>
 
             <div className="editSectionsContainer">
@@ -75,9 +78,23 @@ function User() {
                 </div>
 
                 <div className="editContainer">
-                    <h2>edit section</h2>
+                    <h2 className="editSectionTitle">Edit</h2>
+                    <label htmlFor="username" className="editLabels">Username</label>
+                    <input type="text" placeHolder={nickname} className="editInput"/>
+
+                    <label htmlFor="email" className="editLabels">Email</label>
+                    <input type="text" placeHolder={email}className="editInput"/>
+
+                    <label htmlFor="phone" className="editLabels">Phone</label>
+                    <input type="text" placeHolder={phone} className="editInput"/>
+
+                    <label htmlFor="Address" className="editLabels">Address</label>
+                    <input type="text" placeHolder={location} className="editInput"/>
+
+                    <button className="submitEditButton">Sumbit</button>
                 </div>
             </div>
+            
         </div>
     )
 }

@@ -9,9 +9,7 @@
         align-items: center;
         justify-content: space-between;
         margin-bottom: 20px;
-        .editTitle{
-    
-        }
+        
         .createButton{
             background-color: rgb(28, 28, 194);
             border: none;
@@ -35,7 +33,7 @@
             flex-direction: column;
             border-radius: 5px;
             padding: 20px;
-            background-color: rgb(255, 240, 240);
+            background-color: rgb(240, 240, 240);
 
             .personalInfoHeader{
                 display: flex;
@@ -81,7 +79,47 @@
 
         .editContainer{
             flex: 2;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            background-color: rgb(240, 240, 240);
+            margin-left: 20px;
+
+            .editSectionTitle{
+                margin-bottom: 2rem
+            }
+
+            .editLabels{
+                margin-bottom: 10px;
+                font-size: 1.2rem;
+            }
+
+            .editInput{
+                margin-bottom: 20px;
+                outline: none;
+                height: 30px;
+                border: none;
+                border-bottom: 2px solid grey;   
+                font-size: 1.1rem;
+                background-color: transparent;
+            }
+
+            .submitEditButton{
+                padding: 10px 0px;
+                width: 20%;
+                font-size: 1.1rem;
+                align-self: flex-start;
+                background-color: rgb(28, 28, 194);
+                color: white;
+                border: none;
+                border-radius: 3px;
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
         }
+
         
     }
 }

@@ -13,53 +13,56 @@ function UserList() {
     }
 
     const columns = [
-        { field: 'id', headerName: 'ID', width: 90 },
-        {
-        field: 'username',
-        headerName: 'Username',
-        width: 200,
-        renderCell: (params) => {
-            return(
-                <div>
-                    <Link to={`/users/${params.row.id}`} className="userRowContainer" >
-                        <img src={params.row.avatar} alt="" className="tableImg"/>
-                        <p className="tableUserName">{params.row.username}</p>
-                    </Link>
-                </div>
-            )
-        }
+        { field: 'id', 
+          headerName: 'ID',
+          width: 90
         },
         {
-        field: 'email',
-        headerName: 'Email',
-        width: 200,
-        editable: true,
+            field: 'username',
+            headerName: 'Username',
+            width: 200,
+            renderCell: (params) => {
+                return(
+                    <div>
+                        <Link to={`/userId/${params.row.id}`} className="userRowContainer" >
+                            <img src={params.row.avatar} alt="" className="tableImg"/>
+                            <p className="tableUserName">{params.row.username}</p>
+                        </Link>
+                    </div>
+                )
+            }
         },
         {
-        field: 'status',
-        headerName: 'Status',
-        width: 150,
-        editable: true,
+            field: 'email',
+            headerName: 'Email',
+            width: 200,
+            editable: true,
         },
         {
-        field: 'transactions',
-        headerName: 'Transactions',
-        width: 200,
+            field: 'status',
+            headerName: 'Status',
+            width: 150,
+            editable: true,
         },
         {
-        field: 'actions',
-        headerName: 'Actions',
-        width: 200,
-        renderCell: (params) => {
-            return(
-                <div className="actionRowContainer">
-                    <Link to={`/userId/${params.row.id}`} className="editLink" >
-                        <button className="editButton">Edit</button>
-                    </Link>
-                    <DeleteOutlineIcon className="deleteButton" onClick={() => deleteUser(params.row.id)}/>
-                </div>
-            )
-        }
+            field: 'transactions',
+            headerName: 'Transactions',
+            width: 200,
+        },
+        {
+            field: 'actions',
+            headerName: 'Actions',
+            width: 200,
+            renderCell: (params) => {
+                return(
+                    <div className="actionRowContainer">
+                        <Link to={`/userId/${params.row.id}`} className="editLink" >
+                            <button className="editButton">Edit</button>
+                        </Link>
+                        <DeleteOutlineIcon className="deleteButton" onClick={() => deleteUser(params.row.id)}/>
+                    </div>
+                )
+            }
         }
     ];
 

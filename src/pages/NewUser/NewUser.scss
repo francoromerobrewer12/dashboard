@@ -1,0 +1,65 @@
+.newUserContainer{
+    flex: 4;
+    padding: 20px;
+
+    .newUserFormContainer{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+        width: 100%;
+
+        .newUserForm{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            gap: 20px;
+
+            .formLeft, .formRight{
+                width: 50%;
+            }
+
+            .statusTitle{
+                margin-bottom: 20px;
+            }
+
+            .newUserInputGroup{
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin-bottom: 20px;
+
+                .newUserLabel{
+                    margin-bottom: 10px;
+                }
+                
+                .newUserInput{
+                    height: 40px;
+                }
+            }
+
+            .newUserInputRadioGroup{
+                .radioLabel{
+                    margin-right: 20px;
+                }
+                .radioInput{
+                    margin-right: 5px;
+                }
+            }
+
+        }
+
+        .newUserSubmitButton{
+            width: 200px;
+            padding: 10px 0;
+            font-size: 1.2rem;
+            background-color: rgb(28, 28, 194);
+            color: white;
+            border: none;
+            border-radius: 3px;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}

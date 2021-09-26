@@ -50,7 +50,7 @@
           flex-direction: column;
   border-radius: 5px;
   padding: 20px;
-  background-color: #fff0f0;
+  background-color: #f0f0f0;
 }
 
 .userContainer .editSectionsContainer .personalInfoContainer .personalInfoHeader {
@@ -102,5 +102,50 @@
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  background-color: #f0f0f0;
+  margin-left: 20px;
+}
+
+.userContainer .editSectionsContainer .editContainer .editSectionTitle {
+  margin-bottom: 2rem;
+}
+
+.userContainer .editSectionsContainer .editContainer .editLabels {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.userContainer .editSectionsContainer .editContainer .editInput {
+  margin-bottom: 20px;
+  outline: none;
+  height: 30px;
+  border: none;
+  border-bottom: 2px solid grey;
+  font-size: 1.1rem;
+  background-color: transparent;
+}
+
+.userContainer .editSectionsContainer .editContainer .submitEditButton {
+  padding: 10px 0px;
+  width: 20%;
+  font-size: 1.1rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background-color: #1c1cc2;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+.userContainer .editSectionsContainer .editContainer .submitEditButton:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=User.css.map */
