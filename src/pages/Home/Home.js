@@ -4,10 +4,11 @@ import Chart from '../../components/Chart/Chart';
 import FeaturedInfo from '../../components/FeaturedInfo/FeaturedInfo';
 import WidgetLg from '../../components/WidgetLg/WidgetLg';
 import WidgetSm from '../../components/WidgetSm/WidgetSm';
-import {chartData} from '../../data';
+import { chartData } from '../../data';
 import './Home.css';
 
 function Home() {
+    
     return (
         <div className="homeContainer">
             <div className="featureBoxesWrap">

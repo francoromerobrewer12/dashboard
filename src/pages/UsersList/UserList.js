@@ -3,15 +3,14 @@ import './UserList.css';
 import { DataGrid } from '@mui/x-data-grid';
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import { Link } from "react-router-dom";
-import {rows} from '../../data'
+import { useSelector, useDispatch } from 'react-redux'; 
+import { delete_user } from '../../actions';
 
 function UserList() {
-    const [data, setData] = useState(rows);
 
-    const deleteUser = (id) => {
-        setData(data.filter( user => user.id !== id))
-    }
-
+    const data = useSelector(state => state);
+    const dispatch = useDispatch();
+    
     const columns = [
         { field: 'id', 
           headerName: 'ID',
@@ -48,6 +47,13 @@ function UserList() {
             field: 'transactions',
             headerName: 'Transactions',
             width: 200,
+            renderCell: (params) => {
+                return(
+                    <div className="actionRowContainer">
+                        {params.row.transactions.value}
+                    </div>
+                )
+            }
         },
         {
             field: 'actions',
@@ -59,7 +65,7 @@ function UserList() {
                         <Link to={`/userId/${params.row.id}`} className="editLink" >
                             <button className="editButton">Edit</button>
                         </Link>
-                        <DeleteOutlineIcon className="deleteButton" onClick={() => deleteUser(params.row.id)}/>
+                        <DeleteOutlineIcon className="deleteButton" onClick={() => dispatch(delete_user(params.row.id))} />
                     </div>
                 )
             }
@@ -72,7 +78,7 @@ function UserList() {
                 rows={data}
                 columns={columns}
                 pageSize={10}
-                rowsPerPageOptions={[5]}
+                rowsPerPageOptions={[10]}
                 checkboxSelection
                 disableSelectionOnClick
             />

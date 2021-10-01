@@ -9,20 +9,24 @@ import foto5 from '../../assets/5.jpg'
 import memberImg from '../../assets/7.jpg';
 
 import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
-import {widgetSmData} from '../../data'; 
+import { useSelector } from 'react-redux';
+import {rows} from '../../data'; 
 
 function WidgetSm() {
+
+    const selectedUsers = useSelector(state => state).filter(users => users.category === "new")
+    console.log(selectedUsers);
     return (
         <div className="widgetSmContainer">
             <h2 className="widgetSmTitle">New Members</h2>
             {
-                widgetSmData.map( ({ name,job,img }) => {
+                selectedUsers.map( ({ id,username,job,avatar }) => {
                     return(
-                        <div className="newMemberWrap">
+                        <div key={id} className="newMemberWrap">
                             <div className="newMemberLeft">
-                                <img src={img} alt="memberImg" className="newMemberImg"/>
+                                <img src={avatar} alt="memberImg" className="newMemberImg"/>
                                 <div className="newMemberInfo">
-                                    <p className="newMemberName">{name}</p>
+                                    <p className="newMemberName">{username}</p>
                                     <p className="newMemberJob">{job}</p>
                                 </div>
                             </div>

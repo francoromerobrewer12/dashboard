@@ -7,7 +7,17 @@
   margin-bottom: 20px;
 }
 
+.chartContainer .chartWrapp {
+  margin-left: -20px;
+}
+
 .chartContainer .chartTitle {
   margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  .chartContainer {
+    margin-top: -20px;
+  }
 }
 /*# sourceMappingURL=Chart.css.map */

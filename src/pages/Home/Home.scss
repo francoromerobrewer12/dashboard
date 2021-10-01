@@ -16,3 +16,19 @@
         display: flex;
     }
 }
+
+@media only screen and (max-width: 800px){
+    .homeContainer{
+        
+    
+        .featureBoxesWrap{
+            display: flex;
+            flex-direction: column;
+            
+        }
+    
+        .widgetsWrap{
+            flex-direction: column;
+        }
+    }
+}

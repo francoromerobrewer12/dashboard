@@ -52,6 +52,7 @@
 
 .newUserContainer .newUserFormContainer .newUserForm .newUserInputGroup .newUserInput {
   height: 40px;
+  padding-left: 10px;
 }
 
 .newUserContainer .newUserFormContainer .newUserForm .newUserInputRadioGroup .radioLabel {

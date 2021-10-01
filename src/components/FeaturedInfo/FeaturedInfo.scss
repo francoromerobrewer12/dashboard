@@ -48,3 +48,57 @@
         }
     }
 }
+
+@media only screen and (max-width: 800px){
+    .featuredContainer{
+        width: 100%;
+        height: 30%;
+        margin-bottom: 20px;
+    
+        .featuredWrap{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    
+            .featuredValues{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+    
+                .featuredNumber{
+                    font-size: 3rem;
+                }
+    
+                .featuredTendency{
+                    margin-left: 2rem;
+                    display: flex;
+                    align-items: center;
+    
+                    .green{
+                        color: rgb(16, 173, 16);
+                    }
+                    .red{
+                        color: red;
+                    }
+    
+                    .featuredTendencyIcon{
+                        font-size: 1.2rem;
+    
+                    }
+    
+                    .featuredTendencyValue{
+                        font-size: 1.3rem;
+                        margin-right: 10px;
+                    }
+                }
+                
+            }
+            .featuredInfoSubtitle{
+                color: rgb(112, 111, 111)
+            }
+        }
+    }
+}

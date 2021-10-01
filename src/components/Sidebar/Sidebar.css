@@ -46,4 +46,10 @@
 .sidebarContainer .sidebarItem .sidebarItemIcon {
   margin-right: 10px;
 }
+
+@media only screen and (max-width: 1100px) {
+  .sidebarContainer {
+    display: none;
+  }
+}
 /*# sourceMappingURL=Sidebar.css.map */

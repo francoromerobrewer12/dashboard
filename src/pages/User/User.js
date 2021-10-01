@@ -9,29 +9,24 @@ import RoomIcon from '@mui/icons-material/Room';
 import {rows} from '../../data';
 import foto1 from '../../assets/1.jpg';
 import { Link } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+import { edit_user, create_user } from '../../actions';
+
 
 function User() {
-
-    const [user, setUser] = useState({
-         id: '',
-        username: '',
-        avatar:foto1,
-        email: '',
-         status: '',
-        transactions: '',
-        job: '',
-        location: '',
-        phone: '',
-        nickname: '',
-        date: ''
-    },
-    );
-
-    useEffect(() => {
-        setUser(rows.find((user) => parseInt(user.id) === parseInt((window.location.pathname).toString()[window.location.pathname.length - 1])))
-    },[user])
-
-    const {username, job, avatar, nickname, date, phone, email, location} = user;
+    
+    const user = useSelector(state => state).find((user) => parseInt(user.id) === parseInt((window.location.pathname).toString()[window.location.pathname.length - 1]));
+    const dispatch = useDispatch();
+    const {id, username, job, avatar, nickname, date, phone, email, location} = user;
+    
+    const [info, setInfo] = useState({
+        username,
+        nickname,
+        job,
+        email,
+        location,
+        phone
+    })
 
     return (
         <div className="userContainer">
@@ -80,18 +75,35 @@ function User() {
                 <div className="editContainer">
                     <h2 className="editSectionTitle">Edit</h2>
                     <label htmlFor="username" className="editLabels">Username</label>
-                    <input type="text" placeHolder={nickname} className="editInput"/>
+                    <input type="text" placeHolder={username} className="editInput" onChange={(e) => setInfo({
+                        ...info,
+                        username: e.target.value
+                    })}/>
+                    <label htmlFor="username" className="editLabels">Nickname</label>
+                    <input type="text" placeHolder={nickname} className="editInput" onChange={(e) => setInfo({
+                        ...info,
+                        nickname: e.target.value
+                    })}/>
 
-                    <label htmlFor="email" className="editLabels">Email</label>
-                    <input type="text" placeHolder={email}className="editInput"/>
+                    <label htmlFor="email" className="editLabels" >Email</label>
+                    <input type="text" placeHolder={email}className="editInput" onChange={(e) => setInfo({
+                        ...info,
+                        email: e.target.value
+                    })}/>
 
                     <label htmlFor="phone" className="editLabels">Phone</label>
-                    <input type="text" placeHolder={phone} className="editInput"/>
+                    <input type="text" placeHolder={phone} className="editInput" onChange={(e) => setInfo({
+                        ...info,
+                        phone: e.target.value
+                    })}/>
 
                     <label htmlFor="Address" className="editLabels">Address</label>
-                    <input type="text" placeHolder={location} className="editInput"/>
+                    <input type="text" placeHolder={location} className="editInput" onChange={(e) => setInfo({
+                        ...info,
+                        location: e.target.value
+                    })}/>
 
-                    <button className="submitEditButton">Sumbit</button>
+                    <button className="submitEditButton" onClick={() => dispatch(edit_user(id, info))}>Sumbit</button>
                 </div>
             </div>
             

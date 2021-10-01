@@ -59,3 +59,62 @@
         }
     }
 }
+
+@media only screen and (max-width: 1000px){
+    .widgetSmContainer{
+        margin-bottom: 20px;
+    
+        .widgetSmTitle{
+            margin-bottom: 1rem;
+        }
+    
+        .newMemberWrap{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 10px;
+    
+            .newMemberLeft{
+                display:flex;
+                align-items: center;
+                .newMemberImg{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    margin-right: 20px;
+                    object-fit: cover;
+    
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+        
+                .newMemberInfo{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    .newMemberName{
+                        font-weight: 600;
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                    .newMemberJob{
+                        color: grey;
+                    }
+                }
+            }
+    
+            .newMemberButton{
+                
+                .newMemberButtonText{
+                    display: none;
+                }
+
+                .newMemberButtonIcon{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

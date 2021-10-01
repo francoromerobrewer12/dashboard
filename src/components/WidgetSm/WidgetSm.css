@@ -85,4 +85,69 @@
 .widgetSmContainer .newMemberWrap .newMemberButton .newMemberButtonIcon {
   margin-right: 10px;
 }
+
+@media only screen and (max-width: 1000px) {
+  .widgetSmContainer {
+    margin-bottom: 20px;
+  }
+  .widgetSmContainer .widgetSmTitle {
+    margin-bottom: 1rem;
+  }
+  .widgetSmContainer .newMemberWrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .widgetSmContainer .newMemberWrap .newMemberLeft {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .widgetSmContainer .newMemberWrap .newMemberLeft .newMemberImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .widgetSmContainer .newMemberWrap .newMemberLeft .newMemberImg:hover {
+    cursor: pointer;
+  }
+  .widgetSmContainer .newMemberWrap .newMemberLeft .newMemberInfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .widgetSmContainer .newMemberWrap .newMemberLeft .newMemberInfo .newMemberName {
+    font-weight: 600;
+  }
+  .widgetSmContainer .newMemberWrap .newMemberLeft .newMemberInfo .newMemberName:hover {
+    cursor: pointer;
+  }
+  .widgetSmContainer .newMemberWrap .newMemberLeft .newMemberInfo .newMemberJob {
+    color: grey;
+  }
+  .widgetSmContainer .newMemberWrap .newMemberButton .newMemberButtonText {
+    display: none;
+  }
+  .widgetSmContainer .newMemberWrap .newMemberButton .newMemberButtonIcon {
+    margin-right: 10px;
+  }
+}
 /*# sourceMappingURL=WidgetSm.css.map */

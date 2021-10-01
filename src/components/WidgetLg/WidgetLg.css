@@ -68,4 +68,68 @@
           align-items: center;
   padding: 5px;
 }
+
+@media only screen and (max-width: 800px) {
+  .widgetLgContainer {
+    width: 100%;
+    background-color: white;
+    margin-left: 0;
+  }
+  .widgetLgContainer .widgetLgTitle {
+    margin-bottom: 1rem;
+  }
+  .widgetLgContainer .widgetLgTable {
+    width: 100%;
+  }
+  .widgetLgContainer .widgetLgTable .widgetLgTr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .widgetLgContainer .widgetLgTable .widgetLgTr .dateCol {
+    display: none;
+  }
+  .widgetLgContainer .widgetLgTable .widgetLgTr .widgetLgTh {
+    text-align: left;
+    font-weight: 600;
+  }
+  .widgetLgContainer .widgetLgTable .widgetLgTr .widgetLgUser {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .widgetLgContainer .widgetLgTable .widgetLgTr .widgetLgUser .widgetLgUserImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 5px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .widgetLgContainer .widgetLgTable .widgetLgTr .widgetLgUser .widgetLgDate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .widgetLgContainer .widgetLgTable .widgetLgTr .widgetLgStatusBtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5px;
+  }
+}
 /*# sourceMappingURL=WidgetLg.css.map */
